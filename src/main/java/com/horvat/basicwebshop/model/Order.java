@@ -13,6 +13,19 @@ import java.util.Set;
 @Table(name = "webshop_order") // order is reserved keyword in SQL
 public class Order extends BaseEntity {
 
+
+    public Order(Long id, Double totalPriceHRK, Double totalPriceEUR, Status status,
+                 Customer customer, Set<OrderItem> orderedItems) {
+        super(id);
+        this.totalPriceHRK = totalPriceHRK;
+        this.totalPriceEUR = totalPriceEUR;
+        this.status = status;
+        this.customer = customer;
+        if(orderedItems != null){
+            this.orderedItems = orderedItems;
+        }
+    }
+
     private Double totalPriceHRK;
     private Double totalPriceEUR;
 

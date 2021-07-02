@@ -11,6 +11,15 @@ import javax.persistence.*;
 @Table(name = "order_item")
 public class OrderItem extends BaseEntity{
 
+    public OrderItem(Long id, Integer quantity, Order order, Product product) {
+        super(id);
+        this.quantity = quantity;
+        this.order = order;
+        if(product != null){
+            this.product = product;
+        }
+    }
+
     private Integer quantity;
 
     @ManyToOne

@@ -17,6 +17,19 @@ public class Product extends BaseEntity {
     private String description;
     private Boolean isAvaible;
 
+    public Product(Long id, String code, String name, Double priceHRK, String description,
+                   Boolean isAvaible, OrderItem orderItem) {
+        super(id);
+        this.code = code;
+        this.name = name;
+        this.priceHRK = priceHRK;
+        this.description = description;
+        this.isAvaible = isAvaible;
+        if(orderItem != null){
+            this.orderItem = orderItem;
+        }
+    }
+
     @OneToOne( cascade =  CascadeType.ALL, mappedBy = "product")
     private OrderItem orderItem;
 }
