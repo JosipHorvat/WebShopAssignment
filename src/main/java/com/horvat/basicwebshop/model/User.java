@@ -10,26 +10,21 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User extends BaseEntity{
 
-    public User(Long id, String username, String password, String passwordConfirm, Set<Role> roles) {
-        super(id);
-        this.username = username;
-        this.password = password;
-        this.passwordConfirm = passwordConfirm;
-        this.roles = roles;
-    }
 
-    private String username;
+    @Column(nullable = false, unique = true, length = 45)
+    private String email;
 
+    @Column(nullable = false, length = 64)
     private String password;
 
-    @Transient
-    private String passwordConfirm;
+    @Column(name = "first_name", nullable = false, length = 20)
+    private String firstName;
 
-    @ManyToMany
-    private Set<Role> roles = new HashSet<>();
+    @Column(name = "last_name", nullable = false, length = 20)
+    private String lastName;
 
 
 
