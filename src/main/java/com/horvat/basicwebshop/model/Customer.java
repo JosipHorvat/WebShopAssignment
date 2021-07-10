@@ -2,10 +2,7 @@ package com.horvat.basicwebshop.model;
 
 import lombok.*;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -14,23 +11,22 @@ import java.util.Set;
 @NoArgsConstructor
 @Entity
 @Table(name = "customer")
-public class Customer extends  BaseEntity {
+public class Customer extends BaseEntity{
 
 
-    public Customer(Long id, String firstName, String lastName, String email, Set<Order> orders) {
-        super(id);
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        if(orders != null){
-            this.orders = orders;
-        }
-    }
+    @Column(nullable = false, unique = true, length = 45)
+    private String email;
 
+    @Column(nullable = false, length = 64)
+    private String password;
+
+    @Column(name = "first_name", nullable = false, length = 20)
     private String firstName;
+
+    @Column(name = "last_name", nullable = false, length = 20)
     private String lastName;
-    private  String email;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "customer")
     private Set<Order> orders = new HashSet<>();
+
 }

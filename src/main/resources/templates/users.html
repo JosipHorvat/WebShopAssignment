@@ -32,11 +32,11 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="user: ${listUsers}">
-                <td th:text="${user.id}">User ID</td>
-                <td th:text="${user.email}">E-mail</td>
-                <td th:text="${user.firstName}">First Name</td>
-                <td th:text="${user.lastName}">Last Name</td>
+            <tr th:each="customer: ${listCustomers}">
+                <td th:text="${customer.id}">User ID</td>
+                <td th:text="${customer.email}">E-mail</td>
+                <td th:text="${customer.firstName}">First Name</td>
+                <td th:text="${customer.lastName}">Last Name</td>
             </tr>
             </tbody>
         </table>

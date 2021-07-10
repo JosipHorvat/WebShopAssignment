@@ -8,10 +8,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 public class CustomUserDetails implements UserDetails {
 
-    private User user;
+    private Customer customer;
 
-    public CustomUserDetails(User user) {
-        this.user = user;
+    public CustomUserDetails(Customer customer) {
+        this.customer = customer;
     }
 
     @Override
@@ -21,12 +21,12 @@ public class CustomUserDetails implements UserDetails {
 
     @Override
     public String getPassword() {
-        return user.getPassword();
+        return customer.getPassword();
     }
 
     @Override
     public String getUsername() {
-        return user.getEmail();
+        return customer.getEmail();
     }
 
     @Override
@@ -50,7 +50,7 @@ public class CustomUserDetails implements UserDetails {
     }
 
     public String getFullName() {
-        return user.getFirstName() + " " + user.getLastName();
+        return customer.getFirstName() + " " + customer.getLastName();
     }
 
 }
