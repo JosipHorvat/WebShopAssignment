@@ -1,0 +1,74 @@
+
+#divOuterEmptySpace{
+    width: 800px;
+    margin: 100px auto;
+}
+#divObrazacBox{
+    background-color: #E8E8E8;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+    padding: 16px;
+}
+.formElementWrapStyle1 {
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+p{
+    background-color: #D8D8D8;
+    margin-top: 10px;
+
+}
+.formElementWrapStyle1 label{
+    color:  #0044cc;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.formElementWrapStyle1 input {
+    width: 520px;
+    height: 40px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.inputCenter{
+    margin-left: 16px;
+}
+
+textarea{
+    width: 536px;
+    height: 150px;
+    border: solid 1px black;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    font-size: 20px;
+    box-sizing: border-box;
+    resize: none;
+    border-radius: 8px;
+}
+.textAreaLabel{
+    vertical-align: top;
+}
+
+.formLoginButton{
+    font-size: 18px;
+    background-color: #3366ff;
+    color: white;
+    width: 135px;
+    height: 55px;
+    border-radius: 8px;
+    float: right;
+    margin-right: 30px;
+}

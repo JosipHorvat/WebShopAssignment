@@ -1,0 +1,172 @@
+#WholePage{
+   margin-left:  420px;
+}
+
+body
+{
+    background-color: white;
+    font-family: arial;
+    font-size: 12px;
+}
+
+#Inner
+{
+    margin-top: 15px;
+}
+
+#Container
+{
+    width: 900px;
+    margin: 0px auto;
+}
+
+.cleaner
+{
+    clear: both;
+}
+
+#Head
+{
+    height: 212px;
+    width: 900px;
+    background: url("../img/bac_logo.gif") top left repeat-x;
+}
+
+#HeadLeft
+{
+    height: 212px;
+    width: 324px;
+    float: left;
+}
+
+#LeafTop
+{
+    background: url("../img/leaf.gif") top left no-repeat;
+    height: 161px;
+    width: 324px;
+    float: left;
+}
+
+#LeafBottom
+{
+    background: url("../img/leaf2.gif") top left no-repeat;
+    height: 51px;
+    float: left;
+    width: 324px;
+}
+
+#LeafBottom a
+{
+    color: #6b9c22;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 58px;
+    font-size: 11px;
+}
+
+#LeafBottom a:hover
+{
+    text-decoration: underline;
+}
+
+.registration
+{
+    text-indent: 12px;
+}
+
+*>.registration
+{
+    margin-left: 12px;
+}
+
+.logIn
+{
+    margin-left: 40px;
+}
+
+*>.logIn
+{
+    margin-left: 52px;
+}
+
+#HeadRight{
+    height: 212px;
+    width: 576px;
+    float: right;
+    clear: right;
+}
+
+#Logo
+{
+    height: 161px;
+    width: 576px;
+}
+
+#Name
+{
+    background: url("../img/logo.gif") top left no-repeat;
+    background-position: 54px 40px;
+    font-size: 50px;
+    padding-top: 29px;
+    padding-left: 110px;
+    color: #989d9e;
+}
+
+.blue
+{
+    color: #0e88af;
+}
+.grey{
+    margin-left: -11px;
+}
+
+#Informations
+{
+    font-size: 15px;
+    padding-left: 92px;
+    color: #989d9e;
+    margin-top: 25px;
+}
+
+#TopMenu{
+    margin-top: 32px;
+    height: 51px;
+    width: 576px;
+    background: url("../img/bac_button.gif") top left repeat-x;
+}
+
+#TopMenu a{
+    width: 110px;
+    height: 51px;
+    float: right;
+    color: #0e88af;
+    text-decoration: none;
+    font-weight: bold;
+    padding-top: 20px;
+    text-indent: 38px;
+}
+
+#TopMenu a:hover{
+    text-decoration: underline;
+}
+
+#TopMenu .home{
+    background: url("../img/home.jpg") top left no-repeat;
+}
+
+#TopMenu .help{
+    background: url("../img/help.jpg") top left no-repeat;
+}
+
+#TopMenu .contact{
+    background: url("../img/contact.jpg") top left no-repeat;
+}
+
+#TopMenu .orders{
+    background: url("../img/orders.jpg") top left no-repeat;
+}
+
+
+#TopMenu .kart{
+    background: url("../img/kart.jpg") top left no-repeat;
+}

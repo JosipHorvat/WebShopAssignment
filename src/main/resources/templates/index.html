@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html  lang="en" xmlns:th="http://www.thymeleaf.org">
-
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="ISO-8859-1">
-    <title>Basic Web shop</title>
-    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
-    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+    <meta charset="UTF-8">
+    <title>Web Shop</title>
+    <link th:href = "@{/css/default.css}" rel="stylesheet" >
+
+
 </head>
 <body>
-<div class="container text-center">
-    <h1>Welcome to Basic Web Shop</h1>
-    <h3><a th:href="@{/users}">List of Users</a></h3>
-    <h3><a th:href="@{/register}">Register</a></h3>
-    <h3><a th:href="@{/login}">Login</a></h3>
+<div id="WholePage">
+    <div id="Inner">
+        <div id="Container">
+        </div>
+        <div id="Head">
+            <div id="HeadLeft">
+                <div id="LeafTop"></div>
+                <div id="LeafBottom">
+                    <a class="registration" th:href="@{/register}">REGISTER </a>
+                    <a class="logIn" th:href="@{/login}">LOG IN </a>
+                </div>
+            </div>
+
+            <div id="HeadRight">
+                <div id="Logo">
+                    <div id="Name">
+                        <span class="blue">W</span>
+                        <span class="grey">eb</span>
+                        <span class="blue">S</span>
+                        <span class="grey">hop</span>
+                    </div>
+                    <div id="Informations">Good afternoon | Have fun</div>
+                    <div id="TopMenu">
+                        <a class="kart" href="#"> <span>KART</span></a>
+                        <a class="orders" href="#"> <span>ORDERS</span></a>
+                        <a class="help" href="#"> <span>CONTACT</span></a>
+                        <a class="home" href="#"> <span>HOME</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
