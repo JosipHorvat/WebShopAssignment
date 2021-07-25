@@ -1,17 +1,21 @@
+#form1{
+    margin-top: -15px;
+}
 
 #divOuterEmptySpace{
     width: 800px;
     margin: 100px auto;
+    background-color: #989d9e;
 }
 #divObrazacBox{
     background-color: #E8E8E8;
     background-size: cover;
-    width: 800px;
-    height: 600px;
-    padding: 16px;
+    width: 640px;
+    height: 338px;
+    padding: 80px;
 }
 .formElementWrapStyle1 {
-    padding: 20px;
+    padding: 5px;
     margin-bottom: 10px;
     margin-left: 30px;
     margin-right: 30px;
@@ -30,7 +34,7 @@ p{
 }
 
 .formElementWrapStyle1 input {
-    width: 520px;
+    width: 350px;
     height: 40px;
     border: solid 1px black;
     background-color: white;
@@ -42,7 +46,19 @@ p{
 }
 
 .inputCenter{
-    margin-left: 16px;
+    margin-left: 61px;
+}
+
+.inputCenter2{
+    margin-left: 30px;
+}
+
+.inputCenter3{
+    margin-left:  62px;
+}
+
+.inputCenter4{
+    margin-left: 40px;
 }
 
 textarea{
@@ -59,7 +75,7 @@ textarea{
     border-radius: 8px;
 }
 .textAreaLabel{
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 .formLoginButton{

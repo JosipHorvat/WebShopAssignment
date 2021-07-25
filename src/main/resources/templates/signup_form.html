@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>WebShop Sign Up form</title>
-    <!--<link th:href = "@{/css/signupform.css}" rel="stylesheet">  -->
-    <link href="../static/css/signupform.css" rel="stylesheet" type="text/css">
-</head>
+    <link th:href = "@{/css/signupform.css}" rel="stylesheet">
+    <!--  <link href="../static/css/signupform.css" rel="stylesheet" type="text/css">-->
+  </head>
 
-<body>
-        <div id="divOuterEmptySpace">
-            <div id="divObrazacBox">
-             <form id="form1"th:action="@{/process_register}" th:object="${customer}"
-              method="post" >
+  <body>
+          <div id="divOuterEmptySpace">
 
-            <p class="formElementWrapStyle1">
-                <label for="email">Email</label>
-                <input class="inputCenter" type="email" th:field="*{email}" name="email" id="email" required/>
-            </p>
+              <div id="divObrazacBox">
 
-            <p class="formElementWrapStyle1">
-                <label class="inputLabels" for="password">Password</label>
-                <input  class="inputCenter" type="password" th:field="*{password}" name="password" id="password"
-                        required minlength="6" maxlength="10"/>
-            </p>
+               <form id="form1"th:action="@{/process_register}" th:object="${customer}"
+                method="post" >
 
-            <p class="formElementWrapStyle1">
-                <label for="name">Name</label>
-                <input type="text" th:field="*{firstName}" name="name" id="name"
-                       required minlength="2" maxlength="20"/>
-            </p>
+              <p class="formElementWrapStyle1">
+                  <label for="email">Email</label>
+                  <input class="inputCenter" type="email" th:field="*{email}" name="email" id="email" required/>
+              </p>
 
-            <p class="formElementWrapStyle1">
-                <label class="textAreaLabel" for="lastname">Message</label>
-                <input type="text"  th:field="*{lastName}"  name="name" id="lastname"
-                       required minlength="2" maxlength="20" />
-            </p>
+              <p class="formElementWrapStyle1">
+                  <label class="inputLabels" for="password">Password</label>
+                  <input  class="inputCenter2" type="password" th:field="*{password}" name="password" id="password"
+                          required minlength="6" maxlength="10"/>
+              </p>
 
-            <p><button type="submit"  class="formLoginButton" id="login" name="Login">Sign Up</button></p>
-        </form>
-         </div>
-    </div>
+              <p class="formElementWrapStyle1">
+                  <label for="name">Name</label>
+                  <input class="inputCenter3" type="text" th:field="*{firstName}" name="name" id="name"
+                         required minlength="2" maxlength="20"/>
+              </p>
 
-</body>
-</html>
+              <p class="formElementWrapStyle1">
+                  <label class="textAreaLabel" for="lastname">Surname</label>
+                  <input class="inputCenter4" type="text"  th:field="*{lastName}"  name="name" id="lastname"
+                         required minlength="2" maxlength="20" />
+              </p>
+
+              <p><button type="submit"  class="formLoginButton" id="login" name="Login">Sign Up</button></p>
+          </form>
+           </div>
+      </div>
+
+  </body>
+  </html>
