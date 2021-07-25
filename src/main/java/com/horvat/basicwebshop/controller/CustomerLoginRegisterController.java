@@ -17,7 +17,7 @@ public class CustomerLoginRegisterController {
     @Autowired
     private CustomerRepository customerRepository;
 
-    @GetMapping("")
+    @GetMapping("index")
     public String viewHomePage(){
         return "index";
     }
@@ -40,11 +40,11 @@ public class CustomerLoginRegisterController {
         return "register_success";
     }
 
-    @GetMapping("/users")
+    @GetMapping("/webshop")
     public String listUsers(Model model) {
-        List<Customer> listCustomers = customerRepository.findAll();
-        model.addAttribute("listUsers", listCustomers);
+//        List<Customer> listCustomers = customerRepository.findAll();
+//        model.addAttribute("listUsers", listCustomers);
 
-        return "users";
+        return "loged_in_index";
     }
 }

@@ -17,8 +17,7 @@
             <div id="HeadLeft">
                 <div id="LeafTop"></div>
                 <div id="LeafBottom">
-                    <a class="registration" th:href="@{/register}">REGISTER </a>
-                    <a class="logIn" th:href="@{/login}">LOG IN </a>
+                    <a class="logIn" th:href="@{/index}">LOG OUT </a>
                 </div>
             </div>
 
@@ -31,10 +30,13 @@
                         <span class="grey">hop</span>
                     </div>
                     <div id="Informations">
-                        <p>Please register or log in to use WebShop</p>
-
+                        <p>
+                            Welcome <b>[[${#request.userPrincipal.principal.fullName}]]</b>
+                        </p>
                     </div>
                     <div id="TopMenu">
+                        <a class="kart" href="#"> <span>KART</span></a>
+                        <a class="orders" href="#"> <span>ORDERS</span></a>
                         <a class="help" href="#"> <span>CONTACT</span></a>
                         <a class="home" href="#"> <span>HOME</span></a>
                     </div>
