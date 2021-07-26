@@ -42,9 +42,6 @@ public class CustomerLoginRegisterController {
 
     @GetMapping("/webshop")
     public String listUsers(Model model) {
-//        List<Customer> listCustomers = customerRepository.findAll();
-//        model.addAttribute("listUsers", listCustomers);
-
         return "loged_in_index";
     }
 }
